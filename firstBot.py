@@ -3,6 +3,8 @@ import time
 from telegram import Bot, Update
 from telegram.ext import Updater, MessageHandler, Filters
 
+Token="Nah man you really thought i'm going to put it here?"
+
 def send_text_file(bot, chat_id, text_file_path):
     with open(text_file_path, 'rb') as f:
         bot.send_document(chat_id, document=f)
